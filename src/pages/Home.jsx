@@ -14,7 +14,8 @@ const Home = () => {
         { id: 2, title: "Day 2", desc: "Create web pages using routings", path: "/lobby" },
         { id: 3, title: "Spl class", desc: "Create web pages using Props", path: "/user" },
         { id: 4, title: "Day 3", desc: "Multi-component, component tree", path: "/studui" },
-        { id: 5, title: "Day 4", desc: "Class component, state, lifecycle", path: "/classComponent" }
+        { id: 5, title: "Day 4", desc: "Class component, state, lifecycle", path: "/classComponent" },
+        { id: 6, title: "Day 5", desc: " Hooks - UseState WIth rendering Methods", path: "/hometask5" }
     ];
 
 

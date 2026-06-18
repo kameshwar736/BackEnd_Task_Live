@@ -22,6 +22,11 @@ import ClassComponent from '../assignments/day4/pages/ClassComponent'
 import Counter from '../assignments/day4/pages/Counter'
 import NonPrimitiveState from '../assignments/day4/pages/NonPrimitiveState'
 import LayoutFour from '../assignments/day4/layoutFour/LayoutFour'
+import HomeTask5 from '../assignments/day5/pages5/HomeTask5'
+import Layout5 from '../assignments/day5/layout5/Layout5'
+import Counter5 from '../assignments/day5/pages5/Counter5'
+import StringRender from '../assignments/day5/pages5/StringRender'
+
 
 const Map = () => {
   return (
@@ -77,6 +82,15 @@ const Map = () => {
           <Route path='/counter' element={<Counter/>} />
           <Route path='/arrayRender' element={<NonPrimitiveState/>} />
         
+        </Route>
+
+
+         {/* assignmentroutes */}
+        {/* day 5 */}
+        <Route element={<Layout5 />}>
+          <Route path='/hometask5' element={<HomeTask5/>} />
+          <Route path='/counter5' element={<Counter5/>}/>
+          <Route path='/nameupdate' element={<StringRender/>}/>
         </Route>
 
 

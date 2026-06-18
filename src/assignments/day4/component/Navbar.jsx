@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
    <>
       <div className='p-8 bg-blue-900 text-white flex justify-between'>
-              <div className='text-4xl px-5'>Day 3</div>
+              <div className='text-4xl px-5'>Day 4</div>
               <div className='flex gap-10 items-center'>
                   <Link to={'/classComponent'}>ClassComponent</Link>
                   <Link to={'/counter'}>Counter</Link>
