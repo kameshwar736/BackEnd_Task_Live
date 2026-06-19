@@ -26,6 +26,10 @@ import HomeTask5 from '../assignments/day5/pages5/HomeTask5'
 import Layout5 from '../assignments/day5/layout5/Layout5'
 import Counter5 from '../assignments/day5/pages5/Counter5'
 import StringRender from '../assignments/day5/pages5/StringRender'
+import Array from '../assignments/day6/pages/Array'
+import Obj from '../assignments/day6/pages/Obj'
+import ArrOfObj from '../assignments/day6/pages/ArrOfObj'
+import LayoutSix from '../assignments/day6/layout6/LayoutSix'
 
 
 const Map = () => {
@@ -91,6 +95,15 @@ const Map = () => {
           <Route path='/hometask5' element={<HomeTask5/>} />
           <Route path='/counter5' element={<Counter5/>}/>
           <Route path='/nameupdate' element={<StringRender/>}/>
+        </Route>
+
+
+          {/* assignmentroutes */}
+        {/* day 6 */}
+        <Route element={<LayoutSix/>}>
+          <Route path='/array' element={<Array/>} />
+          <Route path='/obj' element={<Obj/>}/>
+          <Route path='/ArrOFObj' element={<ArrOfObj/>}/>
         </Route>
 
 
