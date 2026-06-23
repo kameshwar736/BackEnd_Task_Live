@@ -30,6 +30,9 @@ import Array from '../assignments/day6/pages/Array'
 import Obj from '../assignments/day6/pages/Obj'
 import ArrOfObj from '../assignments/day6/pages/ArrOfObj'
 import LayoutSix from '../assignments/day6/layout6/LayoutSix'
+import TaskOne from '../task/t1/pagesT1/TaskOne'
+import LayoutTaskOne from '../task/t1/layoutT1/LayoutTaskOne'
+import PlaceTrackTask from '../pages/PlaceTrackTask'
 
 
 const Map = () => {
@@ -39,6 +42,8 @@ const Map = () => {
 
         <Route element={<Layout />}>
           <Route path='/' element={<Home />} />
+          <Route path='/placeTrackTask' element={<PlaceTrackTask/>} />
+
         </Route>
 
 
@@ -60,7 +65,7 @@ const Map = () => {
         </Route>
 
 
-         {/* assignmentroutes */}
+        {/* assignmentroutes */}
         {/* day Spl class*/}
         <Route element={<LayoutThree />}>
           <Route path='/emp' element={<Employee/>} />
@@ -70,7 +75,7 @@ const Map = () => {
         </Route>
 
 
-          {/* assignmentroutes */}
+        {/* assignmentroutes */}
         {/* day 3 */}
         <Route element={<LayoutThreeA />}>
           <Route path='/studui' element={<StudCardUI/>} />
@@ -79,7 +84,7 @@ const Map = () => {
         
         </Route>
 
-           {/* assignmentroutes */}
+        {/* assignmentroutes */}
         {/* day 4 */}
         <Route element={<LayoutFour />}>
           <Route path='/classComponent' element={<ClassComponent/>} />
@@ -89,7 +94,7 @@ const Map = () => {
         </Route>
 
 
-         {/* assignmentroutes */}
+        {/* assignmentroutes */}
         {/* day 5 */}
         <Route element={<Layout5 />}>
           <Route path='/hometask5' element={<HomeTask5/>} />
@@ -98,12 +103,20 @@ const Map = () => {
         </Route>
 
 
-          {/* assignmentroutes */}
+        {/* assignmentroutes */}
         {/* day 6 */}
         <Route element={<LayoutSix/>}>
           <Route path='/array' element={<Array/>} />
           <Route path='/obj' element={<Obj/>}/>
           <Route path='/ArrOFObj' element={<ArrOfObj/>}/>
+        </Route>
+
+
+        
+        {/* TaskRoute */}
+        {/* TaskOne */}
+        <Route element={<LayoutTaskOne/>}>
+          <Route path='/taskone' element={<TaskOne/>} />
         </Route>
 
 
