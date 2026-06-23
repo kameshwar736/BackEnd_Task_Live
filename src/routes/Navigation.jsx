@@ -33,6 +33,8 @@ import LayoutSix from '../assignments/day6/layout6/LayoutSix'
 import TaskOne from '../task/t1/pagesT1/TaskOne'
 import LayoutTaskOne from '../task/t1/layoutT1/LayoutTaskOne'
 import PlaceTrackTask from '../pages/PlaceTrackTask'
+import BackgroundColor from '../assignments/day8/pages/BackgroundColor'
+import Layout8 from '../assignments/day8/layout8/Layout8'
 
 
 const Map = () => {
@@ -117,6 +119,13 @@ const Map = () => {
         {/* TaskOne */}
         <Route element={<LayoutTaskOne/>}>
           <Route path='/taskone' element={<TaskOne/>} />
+        </Route>
+
+
+        {/* assignmentroutes */}
+        {/* day 8*/}
+        <Route element={<Layout8/>}>
+          <Route path='/bgcolor' element={<BackgroundColor/>} />
         </Route>
 
 
