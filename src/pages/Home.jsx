@@ -17,7 +17,8 @@ const Home = () => {
         { id: 5, title: "Day 4", desc: "Class component, state, lifecycle", path: "/classComponent" },
         { id: 6, title: "Day 5", desc: " Hooks - UseState WIth rendering Methods", path: "/hometask5" },
         { id: 7, title: "Day 6", desc: " Batch update - Rendering Methods HOAM", path: "/array" },
-        { id: 8, title: "Day 8", desc: " Higher Order Component (HOC), code reuse patterns", path: "/bgcolor" },
+        { id: 8, title: "Day 7", desc: "  React UseState Hooks - with Form Handling", path: "/display" },
+        { id: 9, title: "Day 8", desc: " Higher Order Component (HOC), code reuse patterns", path: "/bgcolor" },
     ];
 
 
@@ -31,7 +32,7 @@ const Home = () => {
 
     return (
         <>
-            <div className='bg-gray-200 h-screen'>
+            <div className='bg-gray-200 h-fit'>
                 <div className='flex justify-between px-10 pt-10'>
                     <div className='text-2xl font-bold'>
                         Daily task

@@ -1,16 +1,21 @@
 import React from 'react'
 
-const Button = ({color}) => {
+const Button = ({color,handleColor,showCount}) => {
 
 
-    console.log(color);
+    
+  console.log(color);
+  
     
 
   return (
     <>
-    <button>Clickhere</button>
-    <div style={{backgroundColor : color , padding : 20 , display : 'flex' }}>
-        helo world
+    
+    <div style={{backgroundColor : color , padding : 20 , display : 'flex',  justifyContent : 'center', alignItems : 'center'}}>
+       <button style={{backgroundColor : 'whitesmoke' , padding : 2 , display : 'flex', borderRadius : 3}} onClick={handleColor} >Click here</button>
+    </div>
+    <div>
+      {showCount}
     </div>
     </>
   )

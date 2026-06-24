@@ -99,7 +99,9 @@ const TaskOne = () => {
     
     
 
+    // task4
 
+    const numbers = [1,2,3,4,6,7,8];
 
 
 
@@ -121,6 +123,8 @@ const TaskOne = () => {
           Task 3: Count Courses 
         </p>
 
+        <br />
+        <p>Task 4: Missing Number const numbers = [1,2,3,4,6,7,8]; Task Find missing number. Expected Output: 5</p>
 
        <br />
        <h1>Output on Console</h1>

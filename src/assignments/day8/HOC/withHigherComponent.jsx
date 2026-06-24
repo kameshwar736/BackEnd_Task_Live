@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 const withHigherComponent = (WrappedComponent) => (props)=> {
   return <WrappedComponent {...props}/>
