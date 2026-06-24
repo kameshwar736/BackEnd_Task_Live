@@ -32,7 +32,7 @@ const Home = () => {
 
     return (
         <>
-            <div className='bg-gray-200 h-fit'>
+            <div className='bg-gray-200 h-fit relative top-25'>
                 <div className='flex justify-between px-10 pt-10'>
                     <div className='text-2xl font-bold'>
                         Daily task

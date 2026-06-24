@@ -27,7 +27,7 @@ const PlaceTrackTask = () => {
   return (
    <>
    
-            <div className='bg-gray-200 h-screen'>
+            <div className='bg-gray-200 h-screen relative top-25'>
                 <div className='flex justify-between px-10 pt-10'>
                     <div className='text-2xl font-bold'>
                         Assigned task
