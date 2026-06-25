@@ -37,6 +37,10 @@ import BackgroundColor from '../assignments/day8/pages/BackgroundColor'
 import Layout8 from '../assignments/day8/layout8/Layout8'
 import Layout7 from '../assignments/day7/layout7/Layout7'
 import Display from '../assignments/day7/pages/Display'
+import StudentForm from '../assignments/day10/pages/StudentForm'
+import Layout10 from '../assignments/day10/layout/Layout10'
+import Layout9 from '../assignments/day9/layout/Layout9'
+import RegisterForm9 from '../assignments/day9/pages/RegisterForm9'
 
 
 const Map = () => {
@@ -60,7 +64,6 @@ const Map = () => {
         </Route>
 
 
-        {/* assignmentroutes */}
         {/* day2 */}
         <Route element={<LayoutTwo />}>
           <Route path='/lobby' element={<Lobby/>} />
@@ -69,8 +72,7 @@ const Map = () => {
         </Route>
 
 
-        {/* assignmentroutes */}
-        {/* day Spl class*/}
+         {/* day Spl class*/}
         <Route element={<LayoutThree />}>
           <Route path='/emp' element={<Employee/>} />
           <Route path='/products' element={<Products />} />
@@ -79,7 +81,6 @@ const Map = () => {
         </Route>
 
 
-        {/* assignmentroutes */}
         {/* day 3 */}
         <Route element={<LayoutThreeA />}>
           <Route path='/studui' element={<StudCardUI/>} />
@@ -88,8 +89,9 @@ const Map = () => {
         
         </Route>
 
-        {/* assignmentroutes */}
-        {/* day 4 */}
+
+
+         {/* day 4 */}
         <Route element={<LayoutFour />}>
           <Route path='/classComponent' element={<ClassComponent/>} />
           <Route path='/counter' element={<Counter/>} />
@@ -98,7 +100,6 @@ const Map = () => {
         </Route>
 
 
-        {/* assignmentroutes */}
         {/* day 5 */}
         <Route element={<Layout5 />}>
           <Route path='/hometask5' element={<HomeTask5/>} />
@@ -107,7 +108,6 @@ const Map = () => {
         </Route>
 
 
-        {/* assignmentroutes */}
         {/* day 6 */}
         <Route element={<LayoutSix/>}>
           <Route path='/array' element={<Array/>} />
@@ -116,6 +116,29 @@ const Map = () => {
         </Route>
 
 
+         {/* day 7*/}
+        <Route element={<Layout7/>}>
+          <Route path='/display' element={<Display/>} />
+        </Route>
+
+
+         {/* day 8*/}
+        <Route element={<Layout8/>}>
+          <Route path='/bgcolor' element={<BackgroundColor/>} />
+        </Route>
+
+
+        {/* day 9*/}
+        <Route element={<Layout9/>}>
+          <Route path='/form9' element={<RegisterForm9/>} />
+        </Route>
+
+
+         {/* day 10*/}
+        <Route element={<Layout10/>}>
+          <Route path='/studentForm' element={<StudentForm/>} />
+        </Route>
+
         
         {/* TaskRoute */}
         {/* TaskOne */}
@@ -123,20 +146,7 @@ const Map = () => {
           <Route path='/taskone' element={<TaskOne/>} />
         </Route>
 
-           {/* assignmentroutes */}
-        {/* day 8*/}
-        <Route element={<Layout7/>}>
-          <Route path='/display' element={<Display/>} />
-        </Route>
-
-
-        {/* assignmentroutes */}
-        {/* day 8*/}
-        <Route element={<Layout8/>}>
-          <Route path='/bgcolor' element={<BackgroundColor/>} />
-        </Route>
-
-
+       
 
       </Routes>
     </>

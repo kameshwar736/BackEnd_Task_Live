@@ -65,15 +65,15 @@ const TaskOne = () => {
   const uniqCourse = []
 
 
-  for(let i =0 ; i<=students.length-1 ; i++){
-   let isRepeated = false ;
-    for(let j=0 ; j<=uniqCourse.length-1 ; j++){
-      if(uniqCourse[j] == students[i].course){
+  for (let i = 0; i <= students.length - 1; i++) {
+    let isRepeated = false;
+    for (let j = 0; j <= uniqCourse.length - 1; j++) {
+      if (uniqCourse[j] == students[i].course) {
         isRepeated = true;
         break;
       }
     }
-    if(!isRepeated){
+    if (!isRepeated) {
       uniqCourse.push(students[i].course)
     }
   }
@@ -82,32 +82,54 @@ const TaskOne = () => {
 
   let courseObj = {}
 
-    for(let i=0 ; i <=uniqCourse.length-1 ; i++){
-      courseObj[uniqCourse[i]] = 0
-    }
-    
+  for (let i = 0; i <= uniqCourse.length - 1; i++) {
+    courseObj[uniqCourse[i]] = 0
+  }
 
-    for(let i=0 ; i<=uniqCourse.length-1;i++){
-      for(let j=0 ; j<=students.length-1 ; j++){
-        if(uniqCourse[i] == students[j].course){
-          courseObj[uniqCourse[i]] += 1
-        }
+
+  for (let i = 0; i <= uniqCourse.length - 1; i++) {
+    for (let j = 0; j <= students.length - 1; j++) {
+      if (uniqCourse[i] == students[j].course) {
+        courseObj[uniqCourse[i]] += 1
+      }
+    }
+  }
+
+  console.log("Task 3", courseObj);
+
+
+
+  // task4
+
+  const numbers = [1, 2, 3, 4, 6, 7, 8];
+
+  let missedNumber = null;
+
+  for (let i = 1; i <= numbers.length + 1; i++) {
+
+    let found = false;
+
+    for (let j = 0; j < numbers.length; j++) {
+      if (numbers[j] === i) {
+        found = true;
+        break;
       }
     }
 
-    console.log("Task 3",courseObj);
-    
-    
+    if (!found) {
+      missedNumber = i;
+      break;
+    }
+  }
 
-    // task4
-
-    const numbers = [1,2,3,4,6,7,8];
-
-
+  console.log(missedNumber);
 
 
-  
-  
+
+
+
+
+
 
 
   return (
@@ -120,14 +142,19 @@ const TaskOne = () => {
         </p>
         <br />
         <p>
-          Task 3: Count Courses 
+          Task 3: Count Courses
         </p>
 
         <br />
         <p>Task 4: Missing Number const numbers = [1,2,3,4,6,7,8]; Task Find missing number. Expected Output: 5</p>
 
-       <br />
-       <h1>Output on Console</h1>
+        <br />
+
+        <h1>Output on Console</h1>
+
+        <br />
+
+        <a className='bg-black text-white p-2 rounded-xl' href="https://github.com/kameshwar736/BackEnd_Task_Live/blob/main/src/task/t1/pagesT1/TaskOne.jsx" target="_blank" rel='noopener noreferrer'>View code on git Hub</a>
 
 
       </div>

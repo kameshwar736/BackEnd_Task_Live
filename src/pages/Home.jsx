@@ -19,6 +19,8 @@ const Home = () => {
         { id: 7, title: "Day 6", desc: " Batch update - Rendering Methods HOAM", path: "/array" },
         { id: 8, title: "Day 7", desc: "  React UseState Hooks - with Form Handling", path: "/display" },
         { id: 9, title: "Day 8", desc: " Higher Order Component (HOC), code reuse patterns", path: "/bgcolor" },
+        { id: 10, title: "Day 9", desc: "  useState w/ arrays, immutable update, add/remove, state patterns", path: "/form9" },
+        { id: 11, title: "Day 10", desc: "  Form Handling - Todo List", path: "/studentForm" },
     ];
 
 

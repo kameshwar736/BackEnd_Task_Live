@@ -5,7 +5,7 @@ const NavbarSIx = () => {
     return (
         <>
             <div className='p-8 bg-blue-900 text-white flex justify-between'>
-                <div className='text-4xl px-5'>Day 1</div>
+                <div className='text-4xl px-5'>Day 6</div>
                 <div className='flex gap-10 items-center'>
                    
                      <Link to={'/array'}>Array Render</Link>
