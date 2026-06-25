@@ -41,6 +41,10 @@ import StudentForm from '../assignments/day10/pages/StudentForm'
 import Layout10 from '../assignments/day10/layout/Layout10'
 import Layout9 from '../assignments/day9/layout/Layout9'
 import RegisterForm9 from '../assignments/day9/pages/RegisterForm9'
+import Layout11 from '../assignments/day11/layout11/Layout11'
+import Register11 from '../assignments/day11/pages11/Register11'
+import Login11 from '../assignments/day11/pages11/Login11'
+import Dashboard from '../assignments/day11/pages11/Dashboard'
 
 
 const Map = () => {
@@ -137,6 +141,13 @@ const Map = () => {
          {/* day 10*/}
         <Route element={<Layout10/>}>
           <Route path='/studentForm' element={<StudentForm/>} />
+        </Route>
+
+          {/* day 11*/}
+        <Route element={<Layout11/>}>
+          <Route path='/reg11' element={<Register11/>} />
+          <Route path='/log11' element={<Login11/>} />
+          <Route path='/dash11' element={<Dashboard/>} />
         </Route>
 
         

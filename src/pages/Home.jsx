@@ -7,6 +7,14 @@ const Home = () => {
 
     const [sort,setSort] = useState(true)
 
+    const [date,setDate] = useState("")
+
+    // const handleDate = (e)=>{
+    //     setDate(e.target.value)
+    //     console.log(e.target.value);
+        
+    // }
+
     console.log(sort);
 
     const tasks = [
@@ -21,6 +29,7 @@ const Home = () => {
         { id: 9, title: "Day 8", desc: " Higher Order Component (HOC), code reuse patterns", path: "/bgcolor" },
         { id: 10, title: "Day 9", desc: "  useState w/ arrays, immutable update, add/remove, state patterns", path: "/form9" },
         { id: 11, title: "Day 10", desc: "  Form Handling - Todo List", path: "/studentForm" },
+         { id: 12, title: "Day 11", desc: " Form Handling: controlled input, multi-field, error handling Event Handling, Controlled In", path: "/reg11" }
     ];
 
 
@@ -38,7 +47,10 @@ const Home = () => {
                 <div className='flex justify-between px-10 pt-10'>
                     <div className='text-2xl font-bold'>
                         Daily task
-                    </div>
+                    </div> 
+                    {/* <div>
+                        <input type="date" onChange={handleDate} />
+                    </div> */}
                     <div className='pr-23 font-medium flex gap-3'>
                         <span className='text-xl'>Sortby </span> 
                         <select className='bg-blue-700 text-white rounded p-1' onChange={(e)=>setSort(e.target.value == "true")}>
