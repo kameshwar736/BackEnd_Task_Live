@@ -7,29 +7,35 @@ const Home = () => {
 
     const [sort,setSort] = useState(true)
 
-    const [date,setDate] = useState("")
+    const [day,setDay] = useState("")
 
-    // const handleDate = (e)=>{
-    //     setDate(e.target.value)
-    //     console.log(e.target.value);
+    const handleDate = (e)=>{
+
+        if(e.target.value > tasks.length){
+            alert("invalid")
+           setDay("")
+            return
+        }
+        setDay(e.target.value)
         
-    // }
+        
+    }
 
     console.log(sort);
 
     const tasks = [
-        { id: 1, title: "Day 1", desc: "Create web pages using react", path: "/day1" },
-        { id: 2, title: "Day 2", desc: "Create web pages using routings", path: "/lobby" },
+        { id: 1, day : 1, title: "Day 1", desc: "Create web pages using react", path: "/day1" },
+        { id: 2, day : 2, title: "Day 2", desc: "Create web pages using routings", path: "/lobby" },
         { id: 3, title: "Spl class", desc: "Create web pages using Props", path: "/user" },
-        { id: 4, title: "Day 3", desc: "Multi-component, component tree", path: "/studui" },
-        { id: 5, title: "Day 4", desc: "Class component, state, lifecycle", path: "/classComponent" },
-        { id: 6, title: "Day 5", desc: " Hooks - UseState WIth rendering Methods", path: "/hometask5" },
-        { id: 7, title: "Day 6", desc: " Batch update - Rendering Methods HOAM", path: "/array" },
-        { id: 8, title: "Day 7", desc: "  React UseState Hooks - with Form Handling", path: "/display" },
-        { id: 9, title: "Day 8", desc: " Higher Order Component (HOC), code reuse patterns", path: "/bgcolor" },
-        { id: 10, title: "Day 9", desc: "  useState w/ arrays, immutable update, add/remove, state patterns", path: "/form9" },
-        { id: 11, title: "Day 10", desc: "  Form Handling - Todo List", path: "/studentForm" },
-         { id: 12, title: "Day 11", desc: " Form Handling: controlled input, multi-field, error handling Event Handling, Controlled In", path: "/reg11" }
+        { id: 4, day : 3, title: "Day 3", desc: "Multi-component, component tree", path: "/studui" },
+        { id: 5, day : 4, title: "Day 4", desc: "Class component, state, lifecycle", path: "/classComponent" },
+        { id: 6, day : 5, title: "Day 5", desc: " Hooks - UseState WIth rendering Methods", path: "/hometask5" },
+        { id: 7, day : 6, title: "Day 6", desc: " Batch update - Rendering Methods HOAM", path: "/array" },
+        { id: 8, day : 7, title: "Day 7", desc: "  React UseState Hooks - with Form Handling", path: "/display" },
+        { id: 9, day : 8, title: "Day 8", desc: " Higher Order Component (HOC), code reuse patterns", path: "/bgcolor" },
+        { id: 10, day : 9, title: "Day 9", desc: "  useState w/ arrays, immutable update, add/remove, state patterns", path: "/form9" },
+        { id: 11, day : 10,  title: "Day 10", desc: "  Form Handling - Todo List", path: "/studentForm" },
+         { id: 12, day : 11,  title: "Day 11", desc: " Form Handling: controlled input, multi-field, error handling Event Handling, Controlled In", path: "/reg11" }
     ];
 
 
@@ -45,12 +51,12 @@ const Home = () => {
         <>
             <div className='bg-gray-200 h-fit relative top-25'>
                 <div className='flex justify-between px-10 pt-10'>
-                    <div className='text-2xl font-bold'>
+                 <div className='flex  w-90 justify-between'>
+                    <div className='text-2xl font-bold '>
                         Daily task
                     </div> 
-                    {/* <div>
-                        <input type="date" onChange={handleDate} />
-                    </div> */}
+                        <input className=' border p-2 text-center rounded-lg h-8' type="number" value={day} onChange={handleDate} placeholder='Search Day' />
+                </div>
                     <div className='pr-23 font-medium flex gap-3'>
                         <span className='text-xl'>Sortby </span> 
                         <select className='bg-blue-700 text-white rounded p-1' onChange={(e)=>setSort(e.target.value == "true")}>
@@ -63,23 +69,21 @@ const Home = () => {
 
                 <div className='flex flex-wrap'>
 
-                    {
-                        sortedTasks.map((e,i)=>(
+                    {(day ? sortedTasks.filter((e) => e.day == day) : sortedTasks).map((e, i) => (
 
-                            <div className='flex p-10' key={e.id}>
-                                <div className='bg-gray-300 w-70 h-50 flex flex-col p-5 justify-between rounded-2xl'>
-                                    <h1 className='text-xl'>{e.title}</h1>
-                                    <p>task : {e.desc}</p>
-                                    <div className='flex justify-center'>
-                                        <button onClick={() => { goto(e.path) }} className='bg-amber-400 p-1 font-medium rounded w-30 cursor-pointer '>View task</button>
-                                    </div>
+                        <div className='flex p-10' key={e.id}>
+                            <div className='bg-gray-300 w-70 h-50 flex flex-col p-5 justify-between rounded-2xl'>
+                                <h1 className='text-xl'>{e.title}</h1>
+                                <p>task : {e.desc}</p>
+                                <div className='flex justify-center'>
+                                    <button onClick={() => { goto(e.path) }} className='bg-amber-400 p-1 font-medium rounded w-30 cursor-pointer '>View task</button>
                                 </div>
                             </div>
+                        </div>
 
-                        ))
-                        
+                    ))
+
                     }
-
 
                 </div>
             </div>

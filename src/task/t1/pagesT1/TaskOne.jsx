@@ -125,6 +125,46 @@ const TaskOne = () => {
   console.log(missedNumber);
 
 
+  // task 5
+
+
+  const originalArray = [10,20,30,20,40,30,50]; 
+
+  const copyArray = []
+
+  const duplicateArray = []
+
+  for(let i=0 ; i<=originalArray.length-1 ; i++){
+
+     let isDuplicate = false;
+
+    for(let j =0 ; j<=copyArray.length-1;j++){
+      if(originalArray[i] == copyArray[j]){
+        isDuplicate = true;
+        break
+      }
+
+    }
+
+    if(!isDuplicate){
+      copyArray.push(originalArray[i])
+    }else{
+      duplicateArray.push(originalArray[i])
+    }
+
+
+
+
+  }
+
+  console.log(duplicateArray);
+  
+
+
+
+  
+
+
 
 
 
@@ -147,6 +187,10 @@ const TaskOne = () => {
 
         <br />
         <p>Task 4: Missing Number const numbers = [1,2,3,4,6,7,8]; Task Find missing number. Expected Output: 5</p>
+
+        <br />
+
+        <p>Task 5: Duplicate Values const numbers = [10,20,30,20,40,30,50]; Task Return only duplicate values. Expected Output: [20,30]</p>
 
         <br />
 
