@@ -45,6 +45,9 @@ import Layout11 from '../assignments/day11/layout11/Layout11'
 import Register11 from '../assignments/day11/pages11/Register11'
 import Login11 from '../assignments/day11/pages11/Login11'
 import Dashboard from '../assignments/day11/pages11/Dashboard'
+import StudentReg from '../assignments/daySp/pages/StudentReg'
+import LoginSP from '../../../../BACKEND_MERN/React/Day12/reactproject/src/pages/Login'
+import DashboardSp from '../assignments/daySp/pages/DashboardSp'
 
 
 const Map = () => {
@@ -148,6 +151,14 @@ const Map = () => {
           <Route path='/reg11' element={<Register11/>} />
           <Route path='/log11' element={<Login11/>} />
           <Route path='/dash11' element={<Dashboard/>} />
+        </Route>
+
+         {/* day Special Test*/}
+        <Route element={<Layout11/>}>
+          <Route path='/spStudent' element={<StudentReg/>} />
+           <Route path='/loginSp' element={<LoginSP/>} />
+            <Route path='/dashSP' element={<DashboardSp/>} />
+         
         </Route>
 
         

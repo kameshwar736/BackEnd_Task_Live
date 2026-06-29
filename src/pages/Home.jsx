@@ -35,7 +35,8 @@ const Home = () => {
         { id: 9, day : 8, title: "Day 8", desc: " Higher Order Component (HOC), code reuse patterns", path: "/bgcolor" },
         { id: 10, day : 9, title: "Day 9", desc: "  useState w/ arrays, immutable update, add/remove, state patterns", path: "/form9" },
         { id: 11, day : 10,  title: "Day 10", desc: "  Form Handling - Todo List", path: "/studentForm" },
-         { id: 12, day : 11,  title: "Day 11", desc: " Form Handling: controlled input, multi-field, error handling Event Handling, Controlled In", path: "/reg11" }
+        { id: 12, day : 11,  title: "Day 11", desc: " Form Handling: controlled input, multi-field, error handling Event Handling, Controlled In", path: "/reg11" },
+        { id: 13,  title: "Spl Test", desc: "Test & Task (27-06-2026)", path: "/spStudent" }
     ];
 
 
