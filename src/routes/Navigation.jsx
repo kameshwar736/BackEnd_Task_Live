@@ -48,6 +48,8 @@ import Dashboard from '../assignments/day11/pages11/Dashboard'
 import StudentReg from '../assignments/daySp/pages/StudentReg'
 import LoginSP from '../../../../BACKEND_MERN/React/Day12/reactproject/src/pages/Login'
 import DashboardSp from '../assignments/daySp/pages/DashboardSp'
+import Layout13 from '../assignments/day13/layout/Layout13'
+import SearchFilter from '../assignments/day13/pages/SearchFilter'
 
 
 const Map = () => {
@@ -159,6 +161,11 @@ const Map = () => {
            <Route path='/loginSp' element={<LoginSP/>} />
             <Route path='/dashSP' element={<DashboardSp/>} />
          
+        </Route>
+
+        {/* day 13*/}
+        <Route element={<Layout13/>}>
+          <Route path='/search' element={<SearchFilter/>} />
         </Route>
 
         
