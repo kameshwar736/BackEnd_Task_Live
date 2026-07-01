@@ -66,7 +66,7 @@ const SearchFilter = () => {
 
   return (
    <>
-    <div className='bg-gray-900 h-fit'>
+    <div className='bg-gray-900 h-max'>
         <div>
            <div className='flex gap-5 p-10 justify-center items-center '>
              <div >
@@ -84,9 +84,9 @@ const SearchFilter = () => {
             </div>
            </div>
             <div className='flex  gap-5 p-5 justify-center flex-wrap '>
-                { showData.map((e,i)=>(
+                { showData.length>0?showData.map((e,i)=>(
                   
-                    <div key={e.id} className='bg-red-300 p-5 flex flex-col rounded-2xl justify-center items-center text-center w-50 text-lg text-gray-700'>
+                    <div key={e.id} className='bg-red-300 p-5 flex flex-col rounded-2xl justify-center items-center text-center w-50 text-lg text-gray-700 '>
                         <div>
                             <img src={e.images} alt="img" />
                         </div>
@@ -95,7 +95,9 @@ const SearchFilter = () => {
                             <p>Category : {e.category}</p>
                         </div>
                     </div>
-                ))}
+                )) : <div className='text-2xl text-white h-screen '>
+                    No Result Found
+                    </div>}
             </div>
         </div>
     </div>
