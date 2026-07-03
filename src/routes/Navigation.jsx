@@ -46,10 +46,11 @@ import Register11 from '../assignments/day11/pages11/Register11'
 import Login11 from '../assignments/day11/pages11/Login11'
 import Dashboard from '../assignments/day11/pages11/Dashboard'
 import StudentReg from '../assignments/daySp/pages/StudentReg'
-import LoginSP from '../../../../BACKEND_MERN/React/Day12/reactproject/src/pages/Login'
+
 import DashboardSp from '../assignments/daySp/pages/DashboardSp'
 import Layout13 from '../assignments/day13/layout/Layout13'
 import SearchFilter from '../assignments/day13/pages/SearchFilter'
+import LoginSP from '../assignments/daySp/pages/LoginSP'
 
 
 const Map = () => {
