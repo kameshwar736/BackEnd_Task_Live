@@ -37,7 +37,9 @@ const Home = () => {
         { id: 11, day : 10,  title: "Day 10", desc: "  Form Handling - Todo List", path: "/studentForm" },
         { id: 12, day : 11,  title: "Day 11", desc: " Form Handling: controlled input, multi-field, error handling Event Handling, Controlled In", path: "/reg11" },
         { id: 13,  title: "Spl Test", desc: "Test & Task (27-06-2026)", path: "/spStudent" },
-        { id: 14, day : 13 , title: "Day 13", desc: "useEffect Search & Filter", path: "/search" }
+        { id: 14, day : 13 , title: "Day 13", desc: "useEffect Search & Filter", path: "/search" },
+        { id: 15, day : 15 , title: "Day 15", desc: "useEffect Search & Filter", path: "/search15" }
+
     ];
 
 

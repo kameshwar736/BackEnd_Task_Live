@@ -51,6 +51,8 @@ import DashboardSp from '../assignments/daySp/pages/DashboardSp'
 import Layout13 from '../assignments/day13/layout/Layout13'
 import SearchFilter from '../assignments/day13/pages/SearchFilter'
 import LoginSP from '../assignments/daySp/pages/LoginSP'
+import Layout15 from '../assignments/day15/layout/Layout15'
+import Search15 from '../assignments/day15/pages/Search15'
 
 
 const Map = () => {
@@ -167,6 +169,11 @@ const Map = () => {
         {/* day 13*/}
         <Route element={<Layout13/>}>
           <Route path='/search' element={<SearchFilter/>} />
+        </Route>
+
+          {/* day 15*/}
+        <Route element={<Layout15/>}>
+          <Route path='/search15' element={<Search15/>} />
         </Route>
 
         
