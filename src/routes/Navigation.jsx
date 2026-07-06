@@ -53,6 +53,8 @@ import SearchFilter from '../assignments/day13/pages/SearchFilter'
 import LoginSP from '../assignments/daySp/pages/LoginSP'
 import Layout15 from '../assignments/day15/layout/Layout15'
 import Search15 from '../assignments/day15/pages/Search15'
+import Layout16 from '../assignments/day16/layout/Layout16'
+import Todo6 from '../assignments/day16/pages/Todo6'
 
 
 const Map = () => {
@@ -174,6 +176,12 @@ const Map = () => {
           {/* day 15*/}
         <Route element={<Layout15/>}>
           <Route path='/search15' element={<Search15/>} />
+        </Route>
+
+
+         {/* day 16*/}
+        <Route element={<Layout16/>}>
+          <Route path='/todo16' element={<Todo6/>} />
         </Route>
 
         
