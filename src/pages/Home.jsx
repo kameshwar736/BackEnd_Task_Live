@@ -39,7 +39,9 @@ const Home = () => {
         { id: 13,  title: "Spl Test", desc: "Test & Task (27-06-2026)", path: "/spStudent" },
         { id: 14, day : 13 , title: "Day 13", desc: "useEffect Search & Filter", path: "/search" },
         { id: 15, day : 15 , title: "Day 15", desc: "useEffect Search & Filter", path: "/search15" },
-        { id: 16, day : 16 , title: "Day 16", desc: "todo , Search & Filter", path: "/todo16" }
+        { id: 16, day : 16 , title: "Day 16", desc: "todo , Search & Filter", path: "/todo16" },
+        { id: 17, day : 17 , title: "Day 17", desc: "useRef process", path: "/resume" },
+        { id: 18, day : 18 , title: "Day 18", desc: "Context APi", path: "/showdata" }
 
     ];
 

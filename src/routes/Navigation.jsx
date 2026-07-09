@@ -55,6 +55,12 @@ import Layout15 from '../assignments/day15/layout/Layout15'
 import Search15 from '../assignments/day15/pages/Search15'
 import Layout16 from '../assignments/day16/layout/Layout16'
 import Todo6 from '../assignments/day16/pages/Todo6'
+import Layout17 from '../assignments/day17/layout/Layout17'
+import Resume from '../assignments/day17/pages/Resume'
+import Layout18 from '../assignments/day18/layout/Layout18'
+import Showdata from '../assignments/day18/pages/Showdata'
+import InputProvider from '../assignments/day18/provider/InputProvider'
+import UserInput from '../assignments/day18/pages/UserInput'
 
 
 const Map = () => {
@@ -184,11 +190,28 @@ const Map = () => {
           <Route path='/todo16' element={<Todo6/>} />
         </Route>
 
+         {/* day 17*/}
+        <Route element={<Layout17/>}>
+          <Route path='/resume' element={<Resume/>} />
+        </Route>
+
+         {/* day 18*/}
+       
+        <Route element={<Layout18/>}>
+   
+          <Route path='/showdata' element={<Showdata/>} />
+           <Route path='/userinput' element={<UserInput/>} />
+
+        
+        </Route>
+      
+
         
         {/* TaskRoute */}
         {/* TaskOne */}
         <Route element={<LayoutTaskOne/>}>
           <Route path='/taskone' element={<TaskOne/>} />
+          
         </Route>
 
        
