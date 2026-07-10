@@ -61,6 +61,9 @@ import Layout18 from '../assignments/day18/layout/Layout18'
 import Showdata from '../assignments/day18/pages/Showdata'
 import InputProvider from '../assignments/day18/provider/InputProvider'
 import UserInput from '../assignments/day18/pages/UserInput'
+import Layout20 from '../assignments/day20/layout/Layout20'
+import FilterHook from '../assignments/day20/pages/FilterHook'
+import LocalStorageHook from '../assignments/day20/pages/LocalStorageHook'
 
 
 const Map = () => {
@@ -201,6 +204,14 @@ const Map = () => {
    
           <Route path='/showdata' element={<Showdata/>} />
            <Route path='/userinput' element={<UserInput/>} />
+
+        
+        </Route>
+
+         <Route element={<Layout20/>}>
+   
+          <Route path='/hookFilter' element={<FilterHook/>} />
+          <Route path='/hookStorage' element={<LocalStorageHook/>} />
 
         
         </Route>
