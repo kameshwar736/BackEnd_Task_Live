@@ -12,6 +12,7 @@ const PlaceTrackTask = () => {
 
     const tasks = [
         { id: 1, title: "Task 1", desc: "22-Jun-2026 ", path: "/taskone" },
+         { id: 2, title: "Task 2", desc: "10-July-2026 ", path: "/refT2" }
     ];
 
 
@@ -52,6 +53,8 @@ const PlaceTrackTask = () => {
                                     <h1 className='text-xl'>{e.title}</h1>
                                     <p>Date : {e.desc}</p>
                                     <div className='flex justify-center'>
+                                        {console.log(e.path)
+                                        }
                                         <button onClick={() => { goto(e.path) }} className='bg-amber-400 p-1 font-medium rounded w-30 cursor-pointer '>View task</button>
                                     </div>
                                 </div>

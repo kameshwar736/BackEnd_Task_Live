@@ -42,7 +42,10 @@ const Home = () => {
         { id: 16, day : 16 , title: "Day 16", desc: "todo , Search & Filter", path: "/todo16" },
         { id: 17, day : 17 , title: "Day 17", desc: "useRef process", path: "/resume" },
         { id: 18, day : 18 , title: "Day 18", desc: "Context APi", path: "/showdata" },
-        { id: 19, day : 20 , title: "Day 20", desc: "Custom Hook", path: "/hookFilter" }
+        { id: 19, day : 20 , title: "Day 20", desc: "Custom Hook", path: "/hookFilter" },
+         { id: 20, day : 22 , title: "Day 22", desc: "useMemo", path: "/memo" },
+         { id: 21, day : 24 , title: "Day 24", desc: "reducer", path: "/reduce" },
+           { id: 22, day : 26 , title: "Day 26", desc: "lazy Loading", path: "/lazyHome" }
 
     ];
 

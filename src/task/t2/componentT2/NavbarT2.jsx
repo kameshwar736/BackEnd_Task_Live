@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const NavbarT2 = () => {
   return (
@@ -6,7 +7,7 @@ const NavbarT2 = () => {
       <div className='p-8 bg-blue-900 text-white flex justify-between'>
                 <div className='text-4xl px-5'>Task 2</div>
                 <div className='flex gap-10 items-center'>
-                    <Link to={''}>Javascript Task</Link>
+                    <Link to={'/refT2'}> Task 1</Link>
                     <Link to={'/'} className='bg-amber-600 p-2 rounded-2xl'>Go To Home</Link>
                 </div>
             </div>

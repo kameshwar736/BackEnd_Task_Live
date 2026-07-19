@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { lazy, Suspense } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Home from '../pages/Home'
 import From from '../assignments/day1/pages/From'
@@ -64,12 +64,29 @@ import UserInput from '../assignments/day18/pages/UserInput'
 import Layout20 from '../assignments/day20/layout/Layout20'
 import FilterHook from '../assignments/day20/pages/FilterHook'
 import LocalStorageHook from '../assignments/day20/pages/LocalStorageHook'
+import RefT2 from '../task/t2/pagesT2/RefT2'
+import LayoutT2 from '../task/t2/layoutT2/LayoutT2'
+import Layout21 from '../assignments/day22/layout/Layout21'
+import Products21 from '../assignments/day22/pages/Products21'
+import Layout24 from '../assignments/day24/layout/Layout24'
+import Register from '../assignments/day24/pages/Register'
+import Layout26 from '../assignments/day26/layout/Layout26'
+
+
 
 
 const Map = () => {
+
+
+  const Home26 = lazy(()=>import( '../assignments/day26/pages/Home26'))
+   const About26 = lazy(()=>import('../assignments/day26/pages/About26'))
+
+
   return (
     <>
-      <Routes>
+
+     <Suspense fallback={<p>Loading...</p>}>
+     <Routes>
 
         <Route element={<Layout />}>
           <Route path='/' element={<Home />} />
@@ -212,9 +229,39 @@ const Map = () => {
    
           <Route path='/hookFilter' element={<FilterHook/>} />
           <Route path='/hookStorage' element={<LocalStorageHook/>} />
+        </Route>
+
+         <Route element={<Layout20/>}>
+   
+          <Route path='/hookFilter' element={<FilterHook/>} />
+          <Route path='/hookStorage' element={<LocalStorageHook/>} />
+        </Route>
+
+         <Route element={<Layout21/>}>
+   
+          <Route path='/memo' element={<Products21/>} />
+          
+        </Route>
+
+        <Route element={<Layout24/>}>
+   
+          <Route path='/reduce' element={<Register/>} />
+          
+        </Route>
+
 
         
+        
+        <Route element={<Layout26/>}>
+        
+                    
+          <Route path='/lazyHome' element={<Home26/>} />
+           <Route path='/lazyAbout' element={<About26/>} />
+          
+        
         </Route>
+
+
       
 
         
@@ -225,9 +272,18 @@ const Map = () => {
           
         </Route>
 
+        {/* TaskRoute */}
+        {/* TaskTwo */}
+        <Route element={<LayoutT2/>}>
+          <Route path='/refT2' element={<RefT2/>} />
+          
+        </Route>
+
        
 
       </Routes>
+     </Suspense>
+      
     </>
   )
 }
